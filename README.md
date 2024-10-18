@@ -50,7 +50,7 @@ I'm **iBoss**, a dedicated developer with a focus on high-performance frameworks
 
 ### 📫 How to reach me:
 
-[![Linkedin: iBoss](https://img.shields.io/badge/-iBoss-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/ibossonline/)](https://www.linkedin.com/in/ibossonline/)
+[![Linkedin: iBoss](https://img.shields.io/badge/-iBoss-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bossonline/)](https://www.linkedin.com/in/bossonline/)
 [![GitHub iBoss21](https://img.shields.io/github/followers/iBoss21?label=follow&style=social)](https://github.com/iBoss21)
 [![Twitter: YourTwitterHandle](https://img.shields.io/twitter/follow/mylife?style=social)](https://twitter.com/mylife)
 
