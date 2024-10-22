@@ -10,7 +10,7 @@ I'm **iBoss**, a dedicated developer with a focus on high-performance frameworks
 
 - 🛠️ **Developer:** LXRCore RedM Framework
 - 🎯 **Mission:** To create the most advanced roleplay tools
-- 🌐 **Website:** [LXRCore Official](https://lxrcore.likeaking.pro/)
+- 🌐 **Website:** [LXRCore Official](https://www.lxrcore.com/)
 
 ### 🔧 Technologies & Tools
 
@@ -39,14 +39,6 @@ I'm **iBoss**, a dedicated developer with a focus on high-performance frameworks
 🏗️ **LXRCore Framework** – The most advanced and modular RedM framework, designed for immersive roleplay.  
 🌐 **LXRCore Farming & Hunting Modules** – Creating innovative mechanics that enrich the roleplay experience.  
 🏆 **Community-Driven Success** – Highly praised by server owners and players worldwide for its flexibility and performance.
-
-### 📝 Latest Blog Posts
-
-<!-- BLOG-POST-LIST:START -->
-- [Creating an Immersive RedM Experience with LXRCore](https://your-blog-url.com/post1)
-- [How Modular Frameworks Can Revolutionize Roleplay Servers](https://your-blog-url.com/post2)
-- [Optimizing Performance in High-Traffic RedM Servers](https://your-blog-url.com/post3)
-<!-- BLOG-POST-LIST:END -->
 
 ### 📫 How to reach me:
 
