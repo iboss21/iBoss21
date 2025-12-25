@@ -14,7 +14,7 @@
 
 ## `> whoami`
 ```yaml
-name: David "iBoss" Fanjarashvili
+name: David "iBoss" F
 location: Brooklyn, NY
 status: US Citizen
 experience: 14+ years
