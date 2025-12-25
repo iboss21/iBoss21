@@ -1,53 +1,92 @@
-# 👋 Hi there, I'm **iBoss**
+# David F. ( iBoss )
 
-## 🚀 Full-Stack Developer | LXRCore Creator | RedM Innovator
+**Infrastructure Engineer | DevOps | Framework Developer**
 
-![GitHub followers](https://img.shields.io/github/followers/iBoss21?style=social)
-![Twitter Follow](https://img.shields.io/twitter/follow/mylife?style=social)
-
-### 🚀 About Me:
-I'm **iBoss**, a dedicated developer with a focus on high-performance frameworks and cutting-edge solutions for the RedM and FiveM roleplay communities. I created the **LXRCore RedM Framework**, designed to be flexible, super-fast, and easily customizable for immersive roleplay experiences.
-
-- 🛠️ **Developer:** LXRCore RedM Framework
-- 🎯 **Mission:** To create the most advanced roleplay tools
-- 🌐 **Website:** [LXRCore Official](https://www.lxrcore.com/)
-
-### 🔧 Technologies & Tools
-
-![](https://img.shields.io/badge/Code-Lua-informational?style=flat&logo=lua&logoColor=white&color=2bbc8a)
-![](https://img.shields.io/badge/Code-JavaScript-informational?style=flat&logo=javascript&logoColor=white&color=2bbc8a)
-![](https://img.shields.io/badge/Code-Node.js-informational?style=flat&logo=node.js&logoColor=white&color=2bbc8a)
-![](https://img.shields.io/badge/Tools-Docker-informational?style=flat&logo=docker&logoColor=white&color=2bbc8a)
-![](https://img.shields.io/badge/Framework-LXRCore-blueviolet?style=flat&logo=github&logoColor=white)
-![](https://img.shields.io/badge/Platform-RedM-informational?style=flat&logo=redm&logoColor=white&color=ff4500)
-
-### 📈 GitHub Stats
-
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=iBoss21&theme=dark&hide_border=true)  
-![iBoss21's GitHub Stats](https://github-readme-stats-eight-theta.vercel.app/api?username=iBoss21&show_icons=true&include_all_commits=true&count_private=true&title_color=a40619&icon_color=a960ff&text_color=ffffff&bg_color=0c0b0c)
-
-[![Top Langs](https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=iBoss21&layout=compact&langs_count=8&theme=dark)](https://github.com/iBoss21/github-readme-stats)
+[![GitHub followers](https://img.shields.io/github/followers/iBoss21?style=social)](https://github.com/iBoss21)
+[![Profile Views](https://komarev.com/ghpvc/?username=iBoss21&label=Profile%20views&color=0e75b6&style=flat)](https://github.com/iBoss21)
 
 ---
 
-### 🏆 GitHub Trophies
+## About
 
-[![trophy](https://github-profile-trophy.vercel.app/?username=iBoss21&theme=nord&column=7)](https://github.com/ryo-ma/github-profile-trophy)
+14+ years in infrastructure engineering, systems administration, and backend development. Based in Brooklyn, NY.
 
-### 🚀 My Projects & Achievements
+Currently operating 14 production services on self-hosted infrastructure serving 1000+ concurrent users. Creator and maintainer of **LXRCore**, a modular RedM framework distributed across 40+ repositories.
 
-🏗️ **LXRCore Framework** – The most advanced and modular RedM framework, designed for immersive roleplay.  
-🌐 **LXRCore Farming & Hunting Modules** – Creating innovative mechanics that enrich the roleplay experience.  
-🏆 **Community-Driven Success** – Highly praised by server owners and players worldwide for its flexibility and performance.
-
-### 📫 How to reach me:
-
-[![Linkedin: iBoss](https://img.shields.io/badge/-iBoss-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/bossonline/)](https://www.linkedin.com/in/bossonline/)
-[![GitHub iBoss21](https://img.shields.io/github/followers/iBoss21?label=follow&style=social)](https://github.com/iBoss21)
-[![Twitter: YourTwitterHandle](https://img.shields.io/twitter/follow/mylife?style=social)](https://twitter.com/mylife)
-
-![Profile Views](https://komarev.com/ghpvc/?username=iBoss21&label=Profile%20views&color=c82107&style=flat)  
+Background includes enterprise IT management, network security, structured cabling, and independent consulting across both Georgian and US markets.
 
 ---
 
-⭐️ From [iBoss21](https://github.com/iBoss21)
+## Technical Stack
+
+**Infrastructure**
+
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
+![Ubuntu](https://img.shields.io/badge/Ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
+![Coolify](https://img.shields.io/badge/Coolify-6B46C1?style=flat)
+
+**Languages**
+
+![Lua](https://img.shields.io/badge/Lua-2C2D72?style=flat&logo=lua&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=flat&logo=javascript&logoColor=F7DF1E)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
+
+**Data**
+
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
+![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=flat&logo=minio&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat&logo=supabase&logoColor=white)
+
+**DevOps & Security**
+
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
+![Gitea](https://img.shields.io/badge/Gitea-609926?style=flat&logo=gitea&logoColor=white)
+
+---
+
+## Active Projects
+
+**LXRCore Framework**  
+Modular RedM/FiveM framework. Economy, crafting, progression, job systems. Designed for long-running servers without periodic wipes.
+
+**Production Infrastructure**  
+14 interconnected services: PostgreSQL clusters, Redis, MinIO object storage, Gitea, Supabase, monitoring stack. 99.8% uptime, zero data loss.
+
+**Workflow Automation**  
+n8n-based automation for deployment, monitoring, and operational tasks. CI/CD pipelines via GitHub Actions.
+
+---
+
+## GitHub Stats
+
+![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=iBoss21&theme=dark&hide_border=true)
+
+![GitHub Stats](https://github-readme-stats-eight-theta.vercel.app/api?username=iBoss21&show_icons=true&include_all_commits=true&count_private=true&theme=dark)
+
+![Top Languages](https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=iBoss21&layout=compact&langs_count=8&theme=dark)
+
+---
+
+## Trophies
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=iBoss21&theme=nord&column=6)](https://github.com/iBoss21)
+
+---
+
+## Certifications
+
+![AWS](https://img.shields.io/badge/AWS_Certified_Developer-Associate-FF9900?style=flat&logo=amazonwebservices&logoColor=white)
+
+---
+
+## Links
+
+[![GitHub](https://img.shields.io/badge/GitHub-iBoss21-181717?style=flat&logo=github)](https://github.com/iBoss21)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-bossonline-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/bossonline/)
+[![LXRCore](https://img.shields.io/badge/LXRCore-Official-blueviolet?style=flat)](https://www.lxrcore.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-davidio.dev-000000?style=flat)](https://davidio.dev)
