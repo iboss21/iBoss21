@@ -113,7 +113,7 @@ def build():
                '  <img alt="Contribution snake" src="assets/generated/snake-light.svg" width="100%">\n</picture>\n')
     out.append('<h2 id="work-with-us">📫 Work with us</h2>\n\n'
                'Need a website that takes orders, a booking system, a dashboard, an app or private AI for your business?\n\n'
-               '<p>\n<a href="https://likeakinginc.com/contact"><img src="https://img.shields.io/badge/Start%20a%20project-likeakinginc.com-c8161d?style=for-the-badge" alt="Start a project"></a>\n'
+               '<p>\n<a href="https://likeakinginc.com/#enquiries"><img src="https://img.shields.io/badge/Start%20a%20project-likeakinginc.com-c8161d?style=for-the-badge" alt="Start a project"></a>\n'
                '<a href="https://animatedwebs.com"><img src="https://img.shields.io/badge/Templates-animatedwebs.com-0b0b0d?style=for-the-badge" alt="AnimatedWebs"></a>\n'
                '<a href="https://regescore.pro"><img src="https://img.shields.io/badge/Private%20AI-regescore.pro-0b0b0d?style=for-the-badge" alt="RegesCore"></a>\n</p>\n')
     out.append('<p align="center"><sub>Status badges check each site live · cards are screenshots of the real sites · the 3D city and snake rebuild daily from contributions</sub></p>\n')

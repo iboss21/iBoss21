@@ -273,7 +273,7 @@ Frameworks, scripts and communities for RedM and FiveM.
 Need a website that takes orders, a booking system, a dashboard, an app or private AI for your business?
 
 <p>
-<a href="https://likeakinginc.com/contact"><img src="https://img.shields.io/badge/Start%20a%20project-likeakinginc.com-c8161d?style=for-the-badge" alt="Start a project"></a>
+<a href="https://likeakinginc.com/#enquiries"><img src="https://img.shields.io/badge/Start%20a%20project-likeakinginc.com-c8161d?style=for-the-badge" alt="Start a project"></a>
 <a href="https://animatedwebs.com"><img src="https://img.shields.io/badge/Templates-animatedwebs.com-0b0b0d?style=for-the-badge" alt="AnimatedWebs"></a>
 <a href="https://regescore.pro"><img src="https://img.shields.io/badge/Private%20AI-regescore.pro-0b0b0d?style=for-the-badge" alt="RegesCore"></a>
 </p>
