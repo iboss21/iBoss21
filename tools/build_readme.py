@@ -44,6 +44,7 @@ SECTIONS = [
     ]),
     ('products', '💼 Products', 'Software we run and sell.', [
         dict(name='ReadySeen', url='https://readyseen.com', label='readyseen.com', card='readyseen', what='Patients prepare for doctor visits and book clinics online. Clinics get a ready brief and an inbox.'),
+        dict(name='CHVENIA', url='https://motion.chvenia.com', label='motion.chvenia.com', card='chvenia', what='A Georgian clothing brand: “Georgia, worn.” The full store at chvenia.com is launching soon.'),
         dict(name='CreditFixExpert', url='https://creditfixexpert.com', label='creditfixexpert.com', card='creditfixexpert', what='A credit-repair platform with client accounts and online payments.'),
     ]),
     ('clients', '🤝 Client work', 'Built for clients, end to end.', [

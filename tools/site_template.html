@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>LIKE A KING INC. · iBoss</title>
+<meta name="description" content="LIKE A KING INC. is a New York software company: websites, ordering systems, apps and private AI for businesses, plus Reges, AnimatedWebs, ReadySeen and LXRCore.">
+<meta property="og:title" content="LIKE A KING INC. · iBoss">
+<meta property="og:description" content="Websites, ordering systems, apps and private AI for real businesses. New York.">
+<meta property="og:image" content="https://iboss21.github.io/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#050506">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* LXR UI Kit: six inks, one blood-red accent, radius 0, hairlines. */
+  :root {
+    --void:#050506; --pit:#0e0e11; --edge:#1e1e23; --smoke:#58575e; --ash:#9b9aa0; --bone:#f4f2ee;
+    --blood:#8d1226; --lit:#c21c37; --ok:#3f9a6b;
+    --cut:"Fraunces", Georgia, serif; --plain:"Inter", system-ui, sans-serif; --code:"JetBrains Mono", ui-monospace, Consolas, monospace;
+    color-scheme: dark;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html { background:var(--void); }
+  body { background:var(--void); color:var(--bone); font:300 17px/1.6 var(--plain); -webkit-font-smoothing:antialiased; overflow-x:hidden; }
+  a { color:inherit; text-decoration:none; }
+  #gl { position:fixed; inset:0; width:100%; height:100%; z-index:0; display:block; }
+  main, header, footer { position:relative; z-index:2; }
+  .mono { font:500 11px var(--code); letter-spacing:.18em; text-transform:uppercase; }
+
+  header { position:fixed; top:22px; left:0; right:0; z-index:20; display:flex; align-items:center; justify-content:space-between; padding:0 36px; pointer-events:none; }
+  header > * { pointer-events:auto; }
+  .mark { display:flex; align-items:baseline; gap:12px; font:600 22px var(--cut); letter-spacing:-.01em; }
+  .mark small { font:500 10px var(--code); letter-spacing:.24em; color:var(--ash); }
+  .links { display:flex; gap:2px; padding:5px; border:1px solid var(--edge); border-radius:999px; background:rgba(5,5,6,.78); backdrop-filter:blur(10px); }
+  .links a { font:500 11px var(--code); letter-spacing:.14em; text-transform:uppercase; color:var(--ash); padding:9px 14px; border-radius:999px; transition:color .3s, background .3s; }
+  .links a:hover, .links a.on { color:var(--bone); background:rgba(244,242,238,.07); }
+  .btn { display:inline-flex; align-items:center; gap:10px; height:46px; padding:0 22px; border-radius:999px; background:var(--bone); color:var(--void); font:600 14px var(--plain); letter-spacing:.01em; transition:background .3s, color .3s, box-shadow .3s; }
+  .btn:hover { background:var(--lit); color:var(--bone); box-shadow:0 0 0 6px rgba(194,28,55,.18); }
+  .ghost { color:var(--ash); border-bottom:1px solid rgba(244,242,238,.26); padding-bottom:2px; font-weight:400; transition:color .3s, border-color .3s; }
+  .ghost:hover { color:var(--bone); border-color:var(--lit); }
+
+  section { position:relative; min-height:100vh; padding:140px 36px 100px; display:flex; align-items:center; }
+  .wrap { width:100%; max-width:1280px; margin:0 auto; }
+  .kick { color:var(--lit); display:flex; align-items:center; gap:10px; }
+  .kick::before { content:""; width:18px; height:1px; background:var(--lit); }
+  h1, h2 { font-family:var(--cut); font-weight:500; letter-spacing:-.018em; font-variation-settings:"opsz" 88; }
+  h1 { font-size:clamp(50px, 6.6vw, 104px); line-height:.94; margin-top:26px; }
+  h2 { font-size:clamp(42px, 5.4vw, 80px); line-height:.98; }
+  h1 em, h2 em { font-style:italic; font-weight:400; color:var(--ash); font-variation-settings:"opsz" 88, "WONK" 1; }
+  .lede { max-width:500px; margin-top:28px; color:var(--ash); font-size:18px; }
+  .row { display:flex; align-items:center; gap:28px; margin-top:40px; flex-wrap:wrap; }
+
+  .hero .copy { max-width:720px; }
+  .hero .meta { position:absolute; left:36px; right:36px; bottom:34px; display:flex; justify-content:space-between; color:var(--smoke); }
+
+  .ask .wrap { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:0 60px; align-items:center; }
+  .ask .copy, .console { grid-column:2; }
+  .console { margin-top:44px; max-width:560px; }
+  .q { display:flex; align-items:center; gap:14px; height:60px; padding:0 8px 0 22px; border:1px solid var(--edge); background:rgba(14,14,17,.85); font-size:16px; }
+  .q .t { flex:1; white-space:nowrap; overflow:hidden; }
+  .caret { display:inline-block; width:1px; height:20px; background:var(--bone); vertical-align:middle; margin-left:2px; animation:blink 1s steps(1) infinite; }
+  @keyframes blink { 50% { opacity:0; } }
+  .go { width:42px; height:42px; background:var(--lit); display:grid; place-items:center; flex:none; }
+  .a { margin-top:22px; padding:0 2px; min-height:200px; }
+  .a p { color:var(--ash); font-size:16px; opacity:0; transform:translateY(8px); transition:opacity .6s, transform .6s; }
+  .a p.in { opacity:1; transform:none; }
+  .a p + p { margin-top:12px; }
+  .cite { display:inline-block; font:500 10px var(--code); color:var(--bone); background:var(--blood); padding:1px 6px; margin-left:4px; vertical-align:2px; }
+  .src { display:flex; gap:8px; flex-wrap:wrap; margin-top:18px; }
+  .src a { font:500 11px var(--code); letter-spacing:.06em; color:var(--ash); border:1px solid var(--edge); padding:6px 10px; transition:color .3s, border-color .3s; }
+  .src a:hover { color:var(--bone); border-color:var(--lit); }
+
+  .families { display:block; }
+  .families .head { max-width:640px; }
+  .list { margin-top:70px; border-top:1px solid var(--edge); }
+  .list li { list-style:none; border-bottom:1px solid var(--edge); }
+  .list a { display:flex; justify-content:space-between; align-items:baseline; gap:20px; padding:22px 0; font:500 clamp(32px, 4.8vw, 70px)/1 var(--cut); letter-spacing:-.02em; color:#26262b; transition:color .5s; }
+  .list li.lit a { color:var(--bone); }
+  .list li.lit a:hover { color:var(--lit); }
+  .list small { font:500 11px var(--code); letter-spacing:.18em; color:var(--ash); text-transform:uppercase; white-space:nowrap; }
+
+  .proof .wrap { display:grid; grid-template-columns:repeat(3, minmax(0,1fr)); gap:40px; }
+  .proof h2 { grid-column:1 / -1; margin-bottom:40px; }
+  .stat b { display:block; font:500 clamp(60px, 8vw, 112px)/.9 var(--cut); letter-spacing:-.03em; font-variant-numeric:tabular-nums; }
+  .stat p { margin-top:18px; color:var(--ash); max-width:280px; }
+
+  .fam { display:block; min-height:auto; padding:120px 36px 40px; }
+  .fam .head { max-width:760px; margin-bottom:40px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill, minmax(min(100%, 360px), 1fr)); gap:0; border-top:1px solid var(--edge); border-left:1px solid var(--edge); }
+  .card { display:flex; flex-direction:column; border-right:1px solid var(--edge); border-bottom:1px solid var(--edge); background:rgba(14,14,17,.82); transition:background .35s; }
+  .card:hover { background:rgba(141,18,38,.16); }
+  .shot { display:block; aspect-ratio:16/9; overflow:hidden; border-bottom:1px solid var(--edge); background:var(--void); }
+  .shot img { width:100%; height:100%; object-fit:cover; display:block; filter:saturate(.85); transition:transform .7s cubic-bezier(.16,1,.3,1), filter .5s; }
+  .card:hover .shot img { transform:scale(1.035); filter:none; }
+  .body { padding:20px 20px 22px; display:flex; flex-direction:column; gap:8px; flex:1; }
+  .body h3 { font:500 24px/1.1 var(--cut); letter-spacing:-.01em; }
+  .body p { color:var(--ash); font-size:15px; flex:1; }
+  .meta { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-top:8px; }
+  .live { height:20px; }
+  .chip { font:500 11px var(--code); letter-spacing:.06em; color:var(--ash); border:1px solid var(--edge); padding:4px 9px; transition:color .3s, border-color .3s; }
+  .chip:hover { color:var(--bone); border-color:var(--lit); }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:20px; }
+  .oss { list-style:none; display:grid; grid-template-columns:repeat(auto-fill, minmax(min(100%, 320px), 1fr)); border-top:1px solid var(--edge); border-left:1px solid var(--edge); }
+  .oss a { display:flex; flex-direction:column; gap:6px; padding:18px 20px; border-right:1px solid var(--edge); border-bottom:1px solid var(--edge); background:rgba(14,14,17,.82); transition:background .35s; }
+  .oss a:hover { background:rgba(141,18,38,.16); }
+  .oss b { font:500 13px var(--code); letter-spacing:.04em; color:var(--bone); }
+  .oss span { color:var(--ash); font-size:14px; }
+
+  .gh { display:block; min-height:auto; padding:120px 36px 40px; }
+  .stats-cards { display:flex; flex-wrap:wrap; gap:16px; align-items:flex-start; }
+  .stats-cards img { max-width:100%; height:auto; border:1px solid var(--edge); }
+  .city { display:block; width:100%; margin-top:24px; border:1px solid var(--edge); }
+
+  .final { text-align:center; }
+  .final .wrap { max-width:900px; }
+  .final .lede { margin:28px auto 0; }
+  .final .row { justify-content:center; }
+
+  footer { padding:34px 36px; display:flex; justify-content:space-between; gap:20px; flex-wrap:wrap; border-top:1px solid var(--edge); background:var(--void); color:var(--smoke); }
+  footer nav { display:flex; gap:22px; } footer a:hover { color:var(--bone); }
+
+  .rise { opacity:0; transform:translateY(30px); }
+  @media (max-width: 900px) {
+    header { padding:0 18px; top:14px; } .links { display:none; } .btn { height:42px; padding:0 18px; font-size:13px; }
+    section, .fam, .gh { padding-left:18px; padding-right:18px; }
+    .hero { align-items:flex-end; } .hero .meta { display:none; }
+    .ask .wrap { grid-template-columns:1fr; } .ask .copy, .console { grid-column:1; }
+    .proof .wrap { grid-template-columns:1fr; }
+    .list a { font-size:32px; } .list small { display:none; }
+    footer { padding:28px 18px; }
+  }
+  @media (prefers-reduced-motion: reduce) { .rise { opacity:1; transform:none; } .caret { animation:none; } }
+</style>
+</head>
+<body>
+<canvas id="gl" aria-hidden="true"></canvas>
+
+<header>
+  <a href="#top" class="mark" aria-label="LIKE A KING INC. home">LAKI <small>LIKE A KING INC.</small></a>
+  <nav class="links" aria-label="Primary">
+    <a href="#ask">Ask</a><a href="#families">Work</a><a href="#proof">Numbers</a><a href="#oss">Open source</a><a href="#activity">GitHub</a>
+  </nav>
+  <a href="https://likeakinginc.com/contact" class="btn">Start a project</a>
+</header>
+
+<main id="top">
+  <section class="hero" data-scene="0">
+    <div class="wrap"><div class="copy">
+      <div class="kick mono rise">iBoss · LIKE A KING INC. · New York</div>
+      <h1 class="rise">We build the web <em>that moves.</em></h1>
+      <p class="lede rise">Websites, online ordering and booking, dashboards, apps and private AI for real businesses. We run our own products alongside client work.</p>
+      <div class="row rise"><a href="https://likeakinginc.com/contact" class="btn">Start a project</a><a href="#families" class="ghost">See the work</a></div>
+    </div></div>
+    <div class="meta mono"><span>Move your cursor through the mind</span><span>Scroll ↓</span></div>
+  </section>
+
+  <section class="ask" id="ask" data-scene="1">
+    <div class="wrap">
+      <div class="copy">
+        <div class="kick mono rise">Ask</div>
+        <h2 class="rise">Ask what we build. <em>Every answer links to the real thing.</em></h2>
+      </div>
+      <div class="console rise">
+        <div class="q"><span class="t" id="qt"></span><span class="caret"></span><span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4" stroke="#f4f2ee" stroke-width="1.6" fill="none"/></svg></span></div>
+        <div class="a" id="ans" aria-live="polite"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="families" id="families" data-scene="2">
+    <div class="wrap">
+      <div class="head">
+        <div class="kick mono rise">The work</div>
+        <h2 class="rise">One company, <em>{{FAMILY_COUNT}} kinds of work.</em></h2>
+      </div>
+      <ul class="list">{{FAMILY_LIST}}</ul>
+    </div>
+  </section>
+
+  <section class="proof" id="proof" data-scene="3">
+    <div class="wrap">
+      <h2 class="rise">Shipped, <em>not slides.</em></h2>
+      <div class="stat rise"><b data-n="{{PROJECT_COUNT}}">0</b><p>live projects, each with its own site, below.</p></div>
+      <div class="stat rise"><b data-n="6.5" data-d="1" data-s="k">0</b><p>commits on GitHub, public and private.</p></div>
+      <div class="stat rise"><b data-n="21" data-s=" days">0</b><p>at most, from first call to a business taking orders online.</p></div>
+    </div>
+  </section>
+
+  {{SECTIONS}}
+
+  <section class="fam" id="oss" data-scene="4">
+    <div class="wrap">
+      <div class="head"><div class="kick mono">Open source</div><h2>Tools we <em>give away.</em></h2></div>
+      <ul class="oss">{{OSS}}</ul>
+      <p class="lede">LXR scripts for RedM and FiveM:</p>
+      <div class="chips">{{SCRIPTS}}</div>
+    </div>
+  </section>
+
+  <section class="gh" id="activity" data-scene="4">
+    <div class="wrap">
+      <div class="head"><div class="kick mono">GitHub</div><h2>Every commit, <em>public and private.</em></h2></div>
+      <div class="stats-cards" style="margin-top:40px">
+        <img src="https://github-readme-stats-eight-theta.vercel.app/api?username=iBoss21&show_icons=true&include_all_commits=true&count_private=true&title_color=a40619&icon_color=a960ff&text_color=ffffff&bg_color=0c0b0c" alt="GitHub stats" loading="lazy">
+        <img src="https://streak-stats.demolab.com/?user=iboss21&hide_border=true&background=050506&ring=C21C37&fire=C21C37&currStreakLabel=F4F2EE&sideLabels=F4F2EE&currStreakNum=F4F2EE&sideNums=F4F2EE&dates=9B9AA0&stroke=1E1E23" alt="GitHub streak" loading="lazy">
+        <img src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=iBoss21&layout=compact&langs_count=8&title_color=a40619&text_color=ffffff&bg_color=0c0b0c" alt="Top languages" loading="lazy">
+      </div>
+      <img class="city" src="https://raw.githubusercontent.com/iboss21/iBoss21/main/profile-3d-contrib/profile-night-rainbow.svg" alt="3D contribution city" loading="lazy">
+    </div>
+  </section>
+
+  <section class="final" id="join" data-scene="5">
+    <div class="wrap">
+      <h2 class="rise">Have something <em>to build?</em></h2>
+      <p class="lede rise">Tell us what your business needs: a site that takes orders, a booking system, a dashboard, an app or private AI. We answer within a day.</p>
+      <div class="row rise"><a href="https://likeakinginc.com/contact" class="btn">Start a project</a><a href="https://github.com/iboss21" class="ghost">GitHub</a><a href="https://x.com/RegesCoreAi" class="ghost">X</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="mono">
+  <span>© 2026 LIKE A KING INC. · New York</span>
+  <nav><a href="https://likeakinginc.com">likeakinginc.com</a><a href="https://animatedwebs.com">animatedwebs.com</a><a href="https://github.com/iboss21/iboss21.github.io">Source</a></nav>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" integrity="sha384-B2WBjDzEjJpYvhmi2UyEn7rektqkf5suS6sNoyyrf0EBAwBHdkiXxIlU0V5Ru2ed" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+<script type="module">
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js";
+gsap.registerPlugin(ScrollTrigger);
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const mobile = innerWidth < 900;
+
+/* ---------- The mind: a particle brain in LXR inks ---------- */
+const canvas = document.getElementById("gl");
+let renderer;
+try { renderer = new THREE.WebGLRenderer({ canvas, antialias: false, alpha: false }); } catch { renderer = null; }
+const uniforms = { uTime:{value:0}, uScatter:{value:0}, uPulse:{value:0}, uDim:{value:1}, uMouse:{value:new THREE.Vector2(9,9)}, uAspect:{value:innerWidth/innerHeight}, uSize:{value:0} };
+const S = mobile
+  ? [{x:0,y:.95,s:.72,sc:0,dim:1},{x:0,y:1.25,s:.55,sc:0,dim:.55},{x:0,y:0,s:.8,sc:1,dim:.55},{x:0,y:.4,s:.6,sc:0,dim:.3},{x:0,y:.9,s:.6,sc:0,dim:.18},{x:0,y:1,s:.66,sc:0,dim:1}]
+  : [{x:2,y:.05,s:1.05,sc:0,dim:1},{x:-1.75,y:0,s:1.05,sc:0,dim:1},{x:0,y:0,s:1,sc:1,dim:.7},{x:0,y:-.2,s:.82,sc:0,dim:.16},{x:2.6,y:0,s:.7,sc:0,dim:.12},{x:0,y:1,s:.72,sc:0,dim:1}];
+const st = { ...S[0] };
+if (renderer) {
+  renderer.setPixelRatio(Math.min(devicePixelRatio, mobile ? 1.75 : 2));
+  renderer.setClearColor(0x050506, 1);
+  const scene = new THREE.Scene(), camera = new THREE.PerspectiveCamera(35, innerWidth / innerHeight, .1, 100);
+  camera.position.z = 7;
+  const group = new THREE.Group(); scene.add(group);
+  const N = mobile ? 5500 : 10000, rnd = (a, b) => a + Math.random() * (b - a);
+  const fold = (x, y, z) => .09 * Math.sin(9 * x + 3 * Math.sin(7 * y)) * Math.cos(8 * y + 5 * z) + .035 * Math.sin(21 * x + 13 * y) * Math.cos(17 * z);
+  const dir = () => { const u = rnd(-1, 1), t = rnd(0, Math.PI * 2), s = Math.sqrt(1 - u * u); return [s * Math.cos(t), u, s * Math.sin(t)]; };
+  function brainPoint() {
+    const r = Math.random(); let x, y, z;
+    if (r < .86) {
+      const side = Math.random() < .5 ? -1 : 1; let dx, dy, dz;
+      do { [dx, dy, dz] = dir(); } while (Math.random() > .15 + .85 * Math.min(1, Math.max(0, (fold(dx, dy, dz + side) / .12 + .15) / .75)));
+      const rr = (Math.random() < .82 ? rnd(.95, 1) : rnd(.3, .9)) * (1 + fold(dx, dy, dz + side));
+      x = dx * 1.35 * rr; y = dy * .95 * rr; z = dz * .62 * rr + side * .36;
+      if (dz * side < -.55) z = side * (.04 + Math.random() * .05);
+      if (y < -.32) y = -.32 + (y + .32) * .45;
+      y += .12 * Math.cos(x * 1.2);
+    } else if (r < .95) {
+      const [dx, dy, dz] = dir(), rr = rnd(.9, 1) * (1 + .05 * Math.sin(40 * dy));
+      x = -.82 + dx * .44 * rr; y = -.58 + dy * .27 * rr; z = dz * .58 * rr;
+    } else {
+      const t = Math.random(), a = rnd(0, Math.PI * 2), rr = .13 * (1 - t * .3) * Math.sqrt(Math.random());
+      x = -.38 - t * .22 + Math.cos(a) * rr; y = -.62 - t * .7; z = Math.sin(a) * rr;
+    }
+    return [x, y, z];
+  }
+  // Mostly bone and ash; the one accent, blood red, lights about a fifth of the points.
+  const INKS = [["#f4f2ee", .42], ["#9b9aa0", .2], ["#58575e", .1], ["#c21c37", .18], ["#8d1226", .1]].flatMap(([h, w]) => Array(Math.round(w * 50)).fill(new THREE.Color(h)));
+  const pos = new Float32Array(N * 3), far = new Float32Array(N * 3), col = new Float32Array(N * 3), seed = new Float32Array(N * 4);
+  for (let i = 0; i < N; i++) {
+    pos.set(brainPoint(), i * 3);
+    const a = rnd(0, Math.PI * 2), b = Math.acos(rnd(-1, 1)), R = rnd(2.5, 8);
+    far.set([R * Math.sin(b) * Math.cos(a) * 1.6, R * Math.cos(b) * .8, R * Math.sin(b) * Math.sin(a) - 1.5], i * 3);
+    const c = INKS[(Math.random() * INKS.length) | 0]; col.set([c.r, c.g, c.b], i * 3);
+    seed.set([Math.random(), Math.random(), Math.random(), Math.random()], i * 4);
+  }
+  const geo = new THREE.BufferGeometry();
+  geo.setAttribute("position", new THREE.BufferAttribute(pos, 3)); geo.setAttribute("aFar", new THREE.BufferAttribute(far, 3));
+  geo.setAttribute("aColor", new THREE.BufferAttribute(col, 3)); geo.setAttribute("aSeed", new THREE.BufferAttribute(seed, 4));
+  uniforms.uSize.value = (mobile ? 64 : 78) * renderer.getPixelRatio();
+  const mat = new THREE.ShaderMaterial({
+    uniforms, transparent: true, depthWrite: false,
+    vertexShader: `
+      uniform float uTime, uScatter, uPulse, uAspect, uSize; uniform vec2 uMouse;
+      attribute vec3 aFar, aColor; attribute vec4 aSeed; varying vec3 vColor; varying float vBright, vRot, vOutline;
+      void main() {
+        float k = smoothstep(aSeed.x * .4, .6 + aSeed.x * .4, uScatter);
+        vec3 p = mix(position, aFar, k);
+        p += .018 * vec3(sin(uTime * 1.3 + aSeed.y * 40.), cos(uTime * 1.1 + aSeed.z * 40.), sin(uTime * .9 + aSeed.w * 40.));
+        vec4 mv = modelViewMatrix * vec4(p, 1.); vec4 clip = projectionMatrix * mv;
+        vec2 d = clip.xy / clip.w - uMouse; d.x *= uAspect; float f = exp(-dot(d, d) * 26.);
+        mv.xy += normalize(d + 1e-4) * f * .28;
+        float wave = uPulse * smoothstep(.18, 0., abs(fract(position.x * .32 - uTime * .55) - .5));
+        vBright = .9 + .2 * sin(uTime * 2. + aSeed.y * 30.) + f * .9 + wave * 1.4;
+        vColor = aColor; vRot = aSeed.z * 6.283 + uTime * (aSeed.w - .5) * 1.5; vOutline = step(.62, aSeed.w);
+        gl_Position = projectionMatrix * mv;
+        gl_PointSize = uSize * (.55 + aSeed.y * .75) * (1. + f * .6 + wave * .5) / -mv.z;
+      }`,
+    fragmentShader: `
+      uniform float uDim; varying vec3 vColor; varying float vBright, vRot, vOutline;
+      float sdTri(vec2 p) { const float k = 1.7320508; p.x = abs(p.x) - 1.; p.y = p.y + 1. / k;
+        if (p.x + k * p.y > 0.) p = vec2(p.x - k * p.y, -k * p.x - p.y) / 2.; p.x -= clamp(p.x, -2., 0.); return -length(p) * sign(p.y); }
+      void main() {
+        vec2 p = gl_PointCoord * 2. - 1.; float c = cos(vRot), s = sin(vRot); p = mat2(c, -s, s, c) * p;
+        float d = sdTri(p * 1.75);
+        float a = mix(smoothstep(.06, -.06, d), smoothstep(.16, .06, abs(d)), vOutline);
+        if (a < .02) discard;
+        gl_FragColor = vec4(vColor * vBright, a * uDim);
+      }`,
+  });
+  group.add(new THREE.Points(geo, mat));
+  const dust = new THREE.BufferGeometry(), dn = mobile ? 600 : 1400, dp = new Float32Array(dn * 3);
+  for (let i = 0; i < dn; i++) dp.set([rnd(-12, 12), rnd(-7, 7), rnd(-10, -2)], i * 3);
+  dust.setAttribute("position", new THREE.BufferAttribute(dp, 3));
+  scene.add(new THREE.Points(dust, new THREE.PointsMaterial({ color: 0x58575e, size: .018, transparent: true, opacity: .6 })));
+
+  const mouse = { x: 0, y: 0, tx: 0, ty: 0 };
+  addEventListener("pointermove", (e) => { mouse.tx = e.clientX / innerWidth * 2 - 1; mouse.ty = -(e.clientY / innerHeight) * 2 + 1; uniforms.uMouse.value.set(mouse.tx, mouse.ty); });
+  addEventListener("pointerleave", () => uniforms.uMouse.value.set(9, 9));
+  addEventListener("resize", () => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight, false); uniforms.uAspect.value = camera.aspect; });
+  renderer.setSize(innerWidth, innerHeight, false);
+  const clock = new THREE.Clock();
+  renderer.setAnimationLoop(() => {
+    if (document.hidden) return;
+    const t = reduce ? 0 : clock.getElapsedTime();
+    mouse.x += (mouse.tx - mouse.x) * .05; mouse.y += (mouse.ty - mouse.y) * .05;
+    uniforms.uTime.value = t; uniforms.uScatter.value = st.sc; uniforms.uDim.value = st.dim; uniforms.uPulse.value *= .985;
+    group.position.set(st.x, st.y, 0); group.scale.setScalar(st.s);
+    group.rotation.y = -.55 + Math.sin(t * .15) * .35 + mouse.x * .3; group.rotation.x = .12 - mouse.y * .15;
+    renderer.render(scene, camera);
+  });
+}
+function goTo(i) {
+  gsap.to(st, { ...S[i], duration: reduce ? 0 : 2.2, ease: "power3.inOut", overwrite: true });
+  const id = document.querySelectorAll("[data-scene]")[i]?.id;
+  document.querySelectorAll(".links a").forEach((a) => a.classList.toggle("on", a.getAttribute("href") === "#" + id));
+}
+document.querySelectorAll("[data-scene]").forEach((sec) =>
+  ScrollTrigger.create({ trigger: sec, start: "top 55%", end: "bottom 45%", onToggle: (t) => t.isActive && goTo(+sec.dataset.scene) }));
+
+/* ---------- Page motion ---------- */
+const lenis = reduce ? null : new Lenis({ lerp: .09 });
+if (lenis) { lenis.on("scroll", ScrollTrigger.update); gsap.ticker.add((t) => lenis.raf(t * 1000)); gsap.ticker.lagSmoothing(0); }
+document.querySelectorAll('a[href^="#"]').forEach((a) => a.addEventListener("click", (e) => {
+  const el = document.querySelector(a.getAttribute("href")); if (!el) return;
+  e.preventDefault(); lenis ? lenis.scrollTo(el, { offset: 0, duration: 1.6 }) : el.scrollIntoView();
+}));
+gsap.to(".hero .rise", { opacity: 1, y: 0, duration: 1.3, stagger: .12, ease: "power3.out", delay: .2 });
+ScrollTrigger.batch("main section:not(.hero) .rise", { start: "top 88%", onEnter: (b) => gsap.to(b, { opacity: 1, y: 0, duration: 1.1, stagger: .1, ease: "power3.out" }) });
+document.querySelectorAll(".list li").forEach((li) => ScrollTrigger.create({ trigger: li, start: "top 62%", end: "bottom 38%", toggleClass: "lit" }));
+document.querySelectorAll(".stat b").forEach((b) => {
+  const n = +b.dataset.n, d = +(b.dataset.d || 0), sfx = b.dataset.s || "", o = { v: 0 };
+  ScrollTrigger.create({ trigger: b, start: "top 85%", once: true, onEnter: () => gsap.to(o, { v: n, duration: 1.8, ease: "power2.out", onUpdate: () => (b.textContent = o.v.toFixed(d) + sfx) }) });
+});
+gsap.to(".hero .copy", { y: -120, opacity: 0, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
+
+/* ---------- Ask: typed question, answer with links to the real work ---------- */
+const QA = {{QA}};
+const qt = document.getElementById("qt"), ans = document.getElementById("ans"), wait = (ms) => new Promise((r) => setTimeout(r, ms));
+async function askLoop() {
+  for (let i = 0; ; i = (i + 1) % QA.length) {
+    const { q, a, src } = QA[i];
+    ans.innerHTML = ""; qt.textContent = "";
+    for (const ch of q) { qt.textContent += ch; await wait(reduce ? 0 : 30); }
+    await wait(450); uniforms.uPulse.value = 1;
+    ans.innerHTML = a.map((h) => `<p>${h}</p>`).join("") + `<div class="src">${src.map(([n, u], k) => `<a href="${u}">[${k + 1}] ${n}</a>`).join("")}</div>`;
+    [...ans.querySelectorAll("p")].forEach((p, n) => setTimeout(() => p.classList.add("in"), 250 + n * 500));
+    await wait(6200);
+  }
+}
+let asking = false;
+new IntersectionObserver((es) => { if (es[0].isIntersecting && !asking) { asking = true; askLoop(); } }, { threshold: .3 }).observe(document.getElementById("ask"));
+</script>
+</body>
+</html>

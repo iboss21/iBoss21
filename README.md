@@ -33,6 +33,7 @@ mindmap
       davidio.dev
     Products
       ReadySeen
+      CHVENIA
       CreditFixExpert
     Client work
       PrimeAuto Connect
@@ -154,12 +155,22 @@ Software we run and sell.
 <a href="https://readyseen.com"><img alt="readyseen.com status" src="https://img.shields.io/website?url=https%3A%2F%2Freadyseen.com&label=readyseen.com&up_message=live&up_color=c8161d&down_message=offline&style=flat-square"></a>
 </td>
 <td width="50%" valign="top">
+<a href="https://motion.chvenia.com"><img src="assets/cards/chvenia.jpg" alt="CHVENIA" width="100%"></a>
+
+<b><a href="https://motion.chvenia.com">CHVENIA</a></b><br>
+<sub>A Georgian clothing brand: “Georgia, worn.” The full store at chvenia.com is launching soon.</sub><br>
+<a href="https://motion.chvenia.com"><img alt="motion.chvenia.com status" src="https://img.shields.io/website?url=https%3A%2F%2Fmotion.chvenia.com&label=motion.chvenia.com&up_message=live&up_color=c8161d&down_message=offline&style=flat-square"></a>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 <a href="https://creditfixexpert.com"><img src="assets/cards/creditfixexpert.jpg" alt="CreditFixExpert" width="100%"></a>
 
 <b><a href="https://creditfixexpert.com">CreditFixExpert</a></b><br>
 <sub>A credit-repair platform with client accounts and online payments.</sub><br>
 <a href="https://creditfixexpert.com"><img alt="creditfixexpert.com status" src="https://img.shields.io/website?url=https%3A%2F%2Fcreditfixexpert.com&label=creditfixexpert.com&up_message=live&up_color=c8161d&down_message=offline&style=flat-square"></a>
 </td>
+<td width="50%"></td>
 </tr>
 </table>
 
